@@ -7,7 +7,7 @@
     ZIP: 08723
     Lat: 40.09015
     Long: -74.13127
-    Tech: Northern Telecom DMS100 (Digital) Host
+    Tech: DMS100
 -
     Switch: KYPTNJKYDS5
     Name: KEYPORT
@@ -16,7 +16,7 @@
     ZIP: 07735
     Lat: 40.43301
     Long: -74.19939
-    Tech: Northern Telecom DMS100 (Digital) Host
+    Tech: DMS100
 -
     Switch: MTCHNJMTDS5
     Name: METUCHEN
@@ -25,7 +25,7 @@
     ZIP: 08840
     Lat: 40.54373
     Long: -74.36307
-    Tech: WECO 5ESS (Digital)
+    Tech: 5ESS
 -
     Switch: RDBKNJRBDS5
     Name: RED BANK
@@ -34,7 +34,7 @@
     ZIP: 07701
     Lat: 40.33861
     Long: -74.0641
-    Tech: Northern Telecom DMS100 (Digital) Host
+    Tech: DMS100
 -
     Switch: NBWKNJNBDS6
     Name: NEW BRUNSWICK
@@ -43,7 +43,7 @@
     ZIP: 08901
     Lat: 40.49499
     Long: -74.44302
-    Tech: Northern Telecom DMS100 (Digital) Host
+    Tech: DMS100
 -
     Switch: RHWYNJRADS5
     Name: RAHWAY
@@ -52,7 +52,7 @@
     ZIP: 07065
     Lat: 40.6061
     Long: -74.27959
-    Tech: NTDMS100
+    Tech: DMS100
 -
     Switch: LGBRNJLBDS5
     Name: LONG BRANCH
@@ -61,7 +61,7 @@
     ZIP: 07740
     Lat: 40.3042
     Long: -73.98729
-    Tech: Northern Telecom DMS100 (Digital) Host
+    Tech: DMS100
 -
     Switch: MNSQNJ01DS5
     Name: MANASQUAN
@@ -70,7 +70,7 @@
     ZIP: 07719
     Lat: 40.12664
     Long: -74.0654
-    Tech: WECO 5ESS (Digital)
+    Tech: 5ESS
 -
     Switch: FRDSNJFRDS5
     Name: FORDS
@@ -79,7 +79,7 @@
     ZIP: 08863
     Lat: 40.5276
     Long: -74.31129
-    Tech: WECO 5ESS Host (Digital)
+    Tech: 5ESS
 -
     Switch: PSWYNJPIDS5
     Name: PISCATAWAY
@@ -88,7 +88,7 @@
     ZIP: 08854
     Lat: 40.5382
     Long: -74.47076
-    Tech: Northern Telecom DMS100 (Digital) Host
+    Tech: DMS100
 -
     Switch: BYVLNJBVDS5
     Name: TOMS RIVER
@@ -97,7 +97,7 @@
     ZIP: 08721
     Lat: 39.90525
     Long: -74.15597
-    Tech: WECO 5ESS (Digital)
+    Tech: 5ESS
 -
     Switch: SORVNJSRDS5
     Name: SOUTH RIVER
@@ -106,7 +106,7 @@
     ZIP: 08882
     Lat: 40.44203
     Long: -74.39172
-    Tech: NTDMS100
+    Tech: DMS100
 -
     Switch: TMRVNJTRDS5
     Name: TOMS RIVER 2
@@ -115,7 +115,7 @@
     ZIP: 08753
     Lat: 39.9519
     Long: -74.19471
-    Tech: WECO 5ESS (Digital)
+    Tech: 5ESS
 -
     Switch: EDSNNJEDDS5
     Name: EDISON
@@ -124,7 +124,7 @@
     ZIP: 08817
     Lat: 40.51589
     Long: -74.40116
-    Tech: WECO 5ESS Host (Digital)
+    Tech: 5ESS
 -
     Switch: SPWDNJSWDS5
     Name: SOUTH RIVER 2
@@ -133,7 +133,7 @@
     ZIP: 08884
     Lat: 40.39377
     Long: -74.38671
-    Tech: NTDMS100
+    Tech: DMS100
 -
     Switch: WOVLNJWODS1
     Name: WEST OSBORNVILLE
@@ -142,7 +142,7 @@
     ZIP: 08723
     Lat: 40.04432
     Long: -74.12615
-    Tech: Northern Telecom DMS100 (Digital) Host
+    Tech: DMS100
 -
     Switch: FRDLNJ01DS5
     Name: FARMINGDALE
@@ -151,7 +151,7 @@
     ZIP: 07727
     Lat: 40.20375
     Long: -74.17078
-    Tech: Northern Telecom DMS100 (Digital) Host
+    Tech: DMS100
 -
     Switch: EDVRNJ01DS5
     Name: TOMS RIVER 3
@@ -160,7 +160,7 @@
     ZIP: 08753
     Lat: 39.97267
     Long: -74.13463
-    Tech: WECO 5ESS (Digital)
+    Tech: 5ESS
 -
     Switch: BDBKNJBDDS5
     Name: BOUND BROOK
@@ -169,7 +169,7 @@
     ZIP: 08805
     Lat: 40.5637
     Long: -74.53161
-    Tech: WECO 5ESS (Digital)
+    Tech: 5ESS
 -
     Switch: MNJTNJ01DS5
     Name: MONMOUTH JUNCTION
@@ -178,7 +178,7 @@
     ZIP: 08852
     Lat: 40.38044
     Long: -74.53466
-    Tech: WECO 5ESS (Digital)
+    Tech: 5ESS
 -
     Switch: MDTWNJMDDS5
     Name: MIDDLETOWN
@@ -187,7 +187,7 @@
     ZIP: 07748
     Lat: 40.3943
     Long: -74.11592
-    Tech: NTDMS100
+    Tech: DMS100
 -
     Switch: SPLKNJSLDS5
     Name: SPRING LAKE
@@ -196,7 +196,7 @@
     ZIP: 07762
     Lat: 40.15228
     Long: -74.02641
-    Tech: WECO 5ESS (Digital)
+    Tech: 5ESS
 -
     Switch: WDBRNJWDDS5
     Name: WOODBRIDGE
@@ -205,7 +205,7 @@
     ZIP: 07095
     Lat: 40.55342
     Long: -74.28375
-    Tech: Northern Telecom DMS100 (Digital) Host
+    Tech: DMS100
 -
     Switch: ATHGNJAHDS5
     Name: ATLANTIC HIGHLANDS
@@ -214,7 +214,7 @@
     ZIP: 07716
     Lat: 40.4089
     Long: -74.04128
-    Tech: WECO 5ESS (Digital)
+    Tech: 5ESS
 -
     Switch: PAMBNJPMDS5
     Name: PERTH AMBOY
@@ -223,7 +223,7 @@
     ZIP: 08861
     Lat: 40.51021
     Long: -74.2703
-    Tech: Siemens EWSD Switching System
+    Tech: EWSD
 -
     Switch: FRHDNJFHDS5
     Name: FREEHOLD
@@ -232,7 +232,7 @@
     ZIP: 07728
     Lat: 40.26248
     Long: -74.27028
-    Tech: Northern Telecom DMS100 (Digital) Host
+    Tech: DMS100
 -
     Switch: PTPLNJPPDS1
     Name: POINT PLEASANT 2
@@ -241,7 +241,7 @@
     ZIP: 08723
     Lat: 40.08476
     Long: -74.06178
-    Tech: WECO 5ESS (Digital)
+    Tech: 5ESS
 -
     Switch: FNPKNJFPDS5
     Name: FRANKLIN PARK
@@ -250,7 +250,7 @@
     ZIP: 08823
     Lat: 40.43508
     Long: -74.54102
-    Tech: WECO 5ESS (Digital)
+    Tech: 5ESS
 -
     Switch: SYRVNJSADS5
     Name: SOUTH AMBOY
@@ -259,7 +259,7 @@
     ZIP: 08879
     Lat: 40.46233
     Long: -74.29662
-    Tech: WECO 5ESS (Digital)
+    Tech: 5ESS
 -
     Switch: LKHRNJ01DS5
     Name: LAKEHURST
@@ -268,7 +268,7 @@
     ZIP: 08733
     Lat: 40.01212
     Long: -74.30909
-    Tech: WECO 5ESS (Digital)
+    Tech: 5ESS
 -
     Switch: HOLMNJHODS5
     Name: HOLMDEL
@@ -277,7 +277,7 @@
     ZIP: 07733
     Lat: 40.34414
     Long: -74.18807
-    Tech: WECO 5ESS (Digital)
+    Tech: 5ESS
 -
     Switch: WHNGNJ01DS5
     Name: LAKEHURST 2
@@ -286,7 +286,7 @@
     ZIP: 08759
     Lat: 39.96014
     Long: -74.39289
-    Tech: WECO 5ESS (Digital)
+    Tech: 5ESS
 -
     Switch: BWTWNJBTDS5
     Name: BROWNTOWN
@@ -295,7 +295,7 @@
     ZIP: 08857
     Lat: 40.40628
     Long: -74.30455
-    Tech: WECO 5ESS (Digital)
+    Tech: 5ESS
 -
     Switch: LKWDNJLKDS5
     Name: LAKEWOOD
@@ -304,7 +304,7 @@
     ZIP: 08701
     Lat: 40.09248
     Long: -74.21212
-    Tech: WECO 5ESS (Digital)
+    Tech: 5ESS
 -
     Switch: EATNNJEADS5
     Name: EATONTOWN
@@ -313,7 +313,7 @@
     ZIP: 07724
     Lat: 40.30711
     Long: -74.05743
-    Tech: WECO 5ESS (Digital)
+    Tech: 5ESS
 -
     Switch: DNLNNJDUDS5
     Name: DUNELLEN
@@ -322,7 +322,7 @@
     ZIP: 08812
     Lat: 40.59027
     Long: -74.46348
-    Tech: WECO 5ESS (Digital)
+    Tech: 5ESS
 -
     Switch: EGTWNJETDS5
     Name: ENGLISHTOWN
@@ -331,7 +331,7 @@
     ZIP: 07726
     Lat: 40.29637
     Long: -74.35598
-    Tech: NTDMS100
+    Tech: DMS100
 -
     Switch: KNBGNJKEDS5
     Name: KEANSBURG
@@ -340,7 +340,7 @@
     ZIP: 07734
     Lat: 40.439619
     Long: -74.11953
-    Tech: NTDMS100
+    Tech: DMS100
 -
     Switch: NPTUNJNTDS5
     Name: NEPTUNE
@@ -349,7 +349,7 @@
     ZIP: 07753
     Lat: 40.22816
     Long: -74.06083
-    Tech: WECO 5ESS (Digital)
+    Tech: 5ESS
 -
     Switch: ASPKNJAPDS5
     Name: ASBURY PARK
@@ -358,7 +358,7 @@
     ZIP: 07712
     Lat: 40.21682
     Long: -74.00855
-    Tech: WECO 5ESS (Digital)
+    Tech: 5ESS
 -
     Switch: JMBGNJJADS5
     Name: JAMESBURG
@@ -367,7 +367,7 @@
     ZIP: 08831
     Lat: 40.34677
     Long: -74.43731
-    Tech: WECO 5ESS (Digital)
+    Tech: 5ESS
 -
     Switch: RBVLNJRBDS5
     Name: ENGLISHTOWN 2
@@ -376,7 +376,7 @@
     ZIP: 07726
     Lat: 40.28421
     Long: -74.32702
-    Tech: Northern Telecom DMS100 (Digital) Host
+    Tech: DMS100
 -
     Switch: CARTNJCADS5
     Name: CARTERET
@@ -385,7 +385,7 @@
     ZIP: 07088
     Lat: 40.579
     Long: -74.2239
-    Tech: Northern Telecom DMS100 (Digital) Host
+    Tech: DMS100
 -
     Switch: LNDNNJ01DS5
     Name: LINDEN
@@ -394,7 +394,7 @@
     ZIP: 07036
     Lat: 40.62852
     Long: -74.24865
-    Tech: Northern Telecom DMS100 (Digital) Host
+    Tech: DMS100
 -
     Switch: LVLTNJSPDS5
     Name: SEASIDE PARK
@@ -403,7 +403,7 @@
     ZIP: 08752
     Lat: 39.97002
     Long: -74.07004
-    Tech: Northern Telecom DMS100 (Digital) Host
+    Tech: DMS100
 -
     Switch: VNHSNJVHDS5
     Name: LAKEWOOD 2
@@ -412,4 +412,4 @@
     ZIP: 08527
     Lat: 40.11423
     Long: -74.35423
-    Tech: Northern Telecom DMS100 (Digital) Host
+    Tech: DMS100

@@ -6,7 +6,7 @@ def getDoc(tech):
 	for file in ls:
 		if tech in file:
 			files.append(file)
-	return files
+	return random.choice(files)
 
 def getPage(file):
 	filename = 'texts/'+file

@@ -1,4 +1,4 @@
-import plot, random, yaml
+import random, yaml
 
 def getStation():
 	with open('yaml/sphreak-station.yaml','r') as locations:
