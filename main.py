@@ -56,6 +56,7 @@ if __name__ == "__main__":
 	trip = 1
 	#Start nightly trip
 	visits = []
+	tech = []
 	home = novel_narr.home
 	start_station = Station()
 	#Go on trip
@@ -64,14 +65,17 @@ if __name__ == "__main__":
 		if trip == 1:
 			fuel, trip, time, reason = takeTrip(home,start_station,fuel,novel_narr.carmpg,trip,speed,time)
 			visits.append(start_station)
+			tech.append(start_station.tech)
 		elif trip > 1:
 			start_station = Station()
 			next_station = Station()
 			if start_station.name == next_station.name or next_station.name in visits: continue
 			visits.append(next_station)
+			tech.append(next_station.tech)
 			fuel, trip, time, reason = takeTrip(start_station,next_station,fuel,novel_narr.carmpg,trip,speed,time)
 			if trip == 0:
 				visits.pop(len(visits)-1)
+				tech.pop(len(tech)-1)
 		else:
 			novel_narr.carfuel = fuel
 			novel_narr.money = money
@@ -80,5 +84,5 @@ if __name__ == "__main__":
 		prev_station = start_station
 	print "Tonight, I went out for %s hours." % (str(duration))
 	for station in visits:
-		print "\tAt %s I found %s." % (station.name,station.tech)
+		print "\tAt %s I found a %s manual." % (station.name,station.tech)
 	print "But, I had to stop because I was out of %s." % (reason)
