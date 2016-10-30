@@ -61,7 +61,6 @@ if __name__ == "__main__":
 	#Go on trip
 	duration = time = random.randint(2,6)
 	while trip != 0:
-		#print fuel, trip, time
 		if trip == 1:
 			fuel, trip, time, reason = takeTrip(home,start_station,fuel,novel_narr.carmpg,trip,speed,time)
 			visits.append(start_station)
