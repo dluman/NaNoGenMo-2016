@@ -1,4 +1,4 @@
-import character, distance, random, station, yaml
+import character, distance, documents, pdfrw, random, station, yaml
 
 global fuel,money,home,trip,prev_station,time
 
@@ -86,3 +86,14 @@ if __name__ == "__main__":
 	for station in visits:
 		print "\tAt %s I found a %s manual." % (station.name,station.tech)
 	print "But, I had to stop because I was out of %s." % (reason)
+	for station in visits:
+		tech_finds = random.randrange(2,10)
+		gen_finds = random.randrange(2,20)
+		for i in xrange(1,tech_finds):
+			doc = documents.getDoc(station.tech)
+			file, page = documents.getPage(doc)
+			documents.mergePages(file,page)
+		for i in xrange(1,gen_finds):
+			doc = documents.getDoc("GEN")
+			file,page = documents.getPage(doc)
+			documents.mergePages(file,page)

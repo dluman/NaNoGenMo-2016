@@ -12,13 +12,17 @@ def getPage(file):
 	filename = 'texts/'+file
 	reader = pdfrw.PdfReader(filename)
 	fileLength = len(reader.pages)
-	randomPage = random.randrange(1,fileLength)
-	return file, randomPage
+	randomPage = random.randrange(0,fileLength)
+	return filename, randomPage
 
-def pullPage(filename,page,destfile):
-	reader = pdfrw.PdfReader(filename)
+def mergePages(file,page):
+	reader = pdfrw.PdfReader(file)
 	writer = pdfrw.PdfWriter()
-	writer.addpage(reader.pages[page]).write(destfile+'.pdf')
-	print "DONE"
-
-file = random.choice(getDoc("DMS100"))
+	try: 
+		novel_reader = pdfrw.PdfReader("novel.pdf")
+		writer.addpages(novel_reader.pages)
+	except: 
+		try: os.mknod("novel.pdf")
+		except: pass
+	writer.addpage(reader.pages[page])
+	writer.write('novel.pdf')
