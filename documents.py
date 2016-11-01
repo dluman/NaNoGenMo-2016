@@ -19,10 +19,10 @@ def mergePages(file,page):
 	reader = pdfrw.PdfReader(file)
 	writer = pdfrw.PdfWriter()
 	try: 
-		novel_reader = pdfrw.PdfReader("novel.pdf")
+		novel_reader = pdfrw.PdfReader("output/novel.pdf")
 		writer.addpages(novel_reader.pages)
 	except: 
-		try: os.mknod("novel.pdf")
+		try: os.mknod("output/novel.pdf")
 		except: pass
 	writer.addpage(reader.pages[page])
-	writer.write('novel.pdf')
+	writer.write('output/novel.pdf')

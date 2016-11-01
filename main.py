@@ -1,4 +1,4 @@
-import character, distance, documents, pdfrw, random, station, yaml
+import character, distance, documents, pdfrw, random, station, weather, yaml
 
 global fuel,money,home,trip,prev_station,time
 
@@ -28,6 +28,7 @@ class Character:
 		self.carfuel = int(char_obj['Fuel'])
 		self.money = int(char_obj['Money'])
 		self.home = char_obj['Home']
+		self.lasttrip = char_obj['Last Trip']
 
 def takeTrip(start_point,end_point,fuel,mpg,trip,speed,time):
 	if trip == 1:
@@ -60,6 +61,7 @@ if __name__ == "__main__":
 	home = novel_narr.home
 	start_station = Station()
 	#Go on trip
+	weather = weather.getForecast(novel_narr.lasttrip)
 	duration = time = random.randint(2,6)
 	while trip != 0:
 		if trip == 1:
@@ -83,6 +85,7 @@ if __name__ == "__main__":
 			break
 		prev_station = start_station
 	print "Tonight, I went out for %s hours." % (str(duration))
+	print "It was %s degrees, was rained %s inches." % (weather.low,weather.precipitation)
 	for station in visits:
 		print "\tAt %s I found a %s manual." % (station.name,station.tech)
 	print "But, I had to stop because I was out of %s." % (reason)
