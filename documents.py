@@ -13,7 +13,13 @@ def getPage(file):
 	reader = pdfrw.PdfReader(filename)
 	fileLength = len(reader.pages)
 	randomPage = random.randrange(0,fileLength)
-	return filename, randomPage
+ 	used = checkUse(filename,randomPage)
+	if not used:
+		with open('texts/use.log','aw') as f:
+			f.write(filename+randomPage)
+		return filename, randomPage
+	else:
+		getPage(file)
 
 def mergePages(file,page):
 	reader = pdfrw.PdfReader(file)
@@ -26,3 +32,12 @@ def mergePages(file,page):
 		except: pass
 	writer.addpage(reader.pages[page])
 	writer.write('output/novel.pdf')
+
+def checkUse(file,page)
+	with open('texts/use.log') as f:
+		records = f.read()
+	for record in records:
+		if file+page in record:
+			return true
+		else:
+			return false
