@@ -2,6 +2,7 @@ import yaml
 
 class Forecast:
 	def __init__(self,data):
+		self.date = data['EST']
 		self.high = data['data'][0]['Max TemperatureF']
 		self.low = data['data'][2]['Min TemperatureF']
 		self.humidity = data['data'][7]['Mean Humidity']

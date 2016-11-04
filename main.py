@@ -62,6 +62,9 @@ if __name__ == "__main__":
 	start_station = Station()
 	#Go on trip
 	weather = weather.getForecast(novel_narr.lasttrip)
+	day = weather.date.split("-")[2]
+	if len(day) < 2:
+		day = "0"+day
 	duration = time = random.randint(2,6)
 	while trip != 0:
 		if trip == 1:
@@ -81,22 +84,30 @@ if __name__ == "__main__":
 		else:
 			novel_narr.carfuel = fuel
 			novel_narr.money = money
-			#character.writeStatus(novel_narr)
+			character.writeStatus(novel_narr)
 			break
 		prev_station = start_station
+	novel_narr.carfuel = fuel
+	novel_narr.money = money
+	character.writeStatus(novel_narr)
 	print "Tonight, I went out for %s hours." % (str(duration))
 	print "It was %s degrees, was rained %s inches." % (weather.low,weather.precipitation)
 	for station in visits:
 		print "\tAt %s I found a %s manual." % (station.name,station.tech)
 	print "But, I had to stop because I was out of %s." % (reason)
 	for station in visits:
-		tech_finds = random.randrange(2,10)
-		gen_finds = random.randrange(2,20)
+		tech_finds = random.randrange(2,5)
+		gen_finds = random.randrange(2,5)
 		for i in xrange(1,tech_finds):
 			doc = documents.getDoc(station.tech)
 			file, page = documents.getPage(doc)
-			documents.mergePages(file,page)
+			used = documents.checkUse(file,page)
+			if not used:		
+				documents.mergePages(file,page)
 		for i in xrange(1,gen_finds):
-			doc = documents.getDoc("GEN")
+			doc = documents.getDoc("NEWS - "+day)
 			file,page = documents.getPage(doc)
-			documents.mergePages(file,page)
+			used = documents.checkUse(file,page)
+			if not used:
+				documents.mergePages(file,page)
+		documents.shufflePages()

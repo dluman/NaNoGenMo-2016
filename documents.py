@@ -1,5 +1,8 @@
 import os, pdfrw, random
 
+if not os.path.isfile('texts/use.log'):
+	os.mknod('texts/use.log')
+
 def getDoc(tech):
 	files = []
 	ls = [file for file in os.listdir('texts/')]
@@ -16,7 +19,7 @@ def getPage(file):
  	used = checkUse(filename,randomPage)
 	if not used:
 		with open('texts/use.log','aw') as f:
-			f.write(filename+randomPage)
+			f.write(filename+str(randomPage))
 		return filename, randomPage
 	else:
 		getPage(file)
@@ -33,11 +36,18 @@ def mergePages(file,page):
 	writer.addpage(reader.pages[page])
 	writer.write('output/novel.pdf')
 
-def checkUse(file,page)
+def checkUse(file,page):
 	with open('texts/use.log') as f:
 		records = f.read()
 	for record in records:
-		if file+page in record:
-			return true
+		if file+str(page) in record:
+			return True
 		else:
-			return false
+			return False
+
+def shufflePages():
+	reader = pdfrw.PdfReader('output/novel.pdf')
+	writer = pdfrw.PdfWriter()
+	random.shuffle(reader.pages)
+	for page in reader.pages: writer.addpage(page)
+	writer.write('output/novel.pdf')
