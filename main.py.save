@@ -1,4 +1,4 @@
-import character, distance, documents, pdfrw, random, station, weather, workplace, yaml
+import character, distance, documents, pdfrw, random, station, weather, yaml
 
 global fuel,money,home,trip,prev_station,time
 
@@ -91,10 +91,6 @@ if __name__ == "__main__":
 	novel_narr.money = money
 	#Save character status
 	character.writeStatus(novel_narr)
-	#Character development monologue
-	print "\n"
-	monologue = random.randrange(12)
-	print workplace.getWorkGripe(monologue) + "\n"
 	#Report trip status
 	print "Tonight, I went out for %s hours." % (str(duration))
 	print "It was %s degrees, was rained %s inches." % (weather.low,weather.precipitation)
@@ -102,26 +98,23 @@ if __name__ == "__main__":
 		print "\tAt %s I found %s manuals." % (station.name,station.tech)
 	print "But, I had to stop because I was out of %s." % (reason)
 	#Collect documents
+	manual_files = []
+	manual_pages = []
+	general_pages = []
+	general_files = []
 	for station in visits:
-		found_files = []
-		found_pages = []
 		tech_finds = random.randrange(2,5)
 		gen_finds = random.randrange(2,5)
 		for i in xrange(1,tech_finds):
 			doc = documents.getDoc(station.tech)
 			file, page = documents.getPage(doc)
 			used = documents.checkUse(file,page)
-			if not used:		
-				#documents.mergePages(file,page)
-				found_files.append(file)
-				found_pages.append(page)
+			if not used:
+				manual_pages.append(file)
+				manual_pages.append(page)
 		for i in xrange(1,gen_finds):
 			doc = documents.getDoc("NEWS - "+day)
 			file,page = documents.getPage(doc)
-			used = documents.checkUse(file,page)
+			used = 
 			if not used:
-				#documents.mergePages(file,page)
-				found_files.append(file)
-				found_pages.append(page)
-		documents.mergePages(found_files,found_pages)
-		#documents.shufflePages()
+				documents.mergePages(file,page)
