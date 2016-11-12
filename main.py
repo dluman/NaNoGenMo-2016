@@ -1,4 +1,4 @@
-import character, distance, documents, pdfrw, random, station, weather, workplace, yaml
+import character, distance, documents, os, pdfrw, random, station, weather, workplace, write, yaml
 
 global fuel,money,home,trip,prev_station,time
 
@@ -92,15 +92,16 @@ if __name__ == "__main__":
 	#Save character status
 	character.writeStatus(novel_narr)
 	#Character development monologue
-	print "\n"
 	monologue = random.randrange(12)
-	print workplace.getWorkGripe(monologue) + "\n"
+	text = workplace.getWorkGripe(monologue)
 	#Report trip status
-	print "Tonight, I went out for %s hours." % (str(duration))
-	print "It was %s degrees, was rained %s inches." % (weather.low,weather.precipitation)
+	text = text + " Tonight, I went out for %s hours." % (str(int(time)))
+	text = text + " It was %s degrees, was rained %s inches." % (weather.low,weather.precipitation)
 	for station in visits:
-		print "\tAt %s I found %s manuals." % (station.name,station.tech)
-	print "But, I had to stop because I was out of %s." % (reason)
+		text = text + " At %s I found %s manuals." % (station.name,station.tech)
+	text = text + " But, I had to stop because I was out of %s." % (reason)
+	try: write.createEntry(str(weather.date),text)
+	except: pass
 	#Collect documents
 	for station in visits:
 		found_files = []
@@ -125,3 +126,4 @@ if __name__ == "__main__":
 				found_pages.append(page)
 		documents.mergePages(found_files,found_pages)
 		#documents.shufflePages()
+	os.remove('temp.pdf')

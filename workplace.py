@@ -27,7 +27,7 @@ def getWorkGripe(length):
 				similar = 0.0
 				possibility = random.choice(complaints)
 				#print possibility
-				try: similar = language.similarity(paragraph[i-1],possibility,False)
+				try: similar = language.similarity(paragraph[len(paragraph)-1],possibility,False)
 				except: pass
 				#print paragraph[0], similar
 				if similar >= .43: 
@@ -36,7 +36,11 @@ def getWorkGripe(length):
 							pass
 						else:
 							continue
-					paragraph.append(possibility)
+					updated = re.sub(r'January|February|March|April|May|June|July|August|September|October|December','November',possibility,re.I)
+					updated = re.sub(r'Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sept|Sep|Oct|Dec','Nov',updated,re.I)
+					updated = language.pronounSub(updated)
+					paragraph.append(updated)
+
 				#print similar,len(paragraph)
 		elif i == 0: paragraph.append(random.choice(complaints))
 	return ' '.join(paragraph)

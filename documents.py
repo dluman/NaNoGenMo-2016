@@ -26,6 +26,8 @@ def getPage(file):
 
 def mergePages(files,pages):
 	writer = pdfrw.PdfWriter()
+	text_reader = pdfrw.PdfReader('temp.pdf')
+	writer.addpages(text_reader.pages)
 	try: 
 		novel_reader = pdfrw.PdfReader("output/novel.pdf")
 		writer.addpages(novel_reader.pages)
@@ -33,7 +35,7 @@ def mergePages(files,pages):
 		try: os.mknod("output/novel.pdf")
 		except: pass
 	count = len(files)
-	for i in range(0,count):
+	for i in range(1,count):
 		choice = random.randrange(count)
 		reader = pdfrw.PdfReader(files[choice])
 		writer.addpage(reader.pages[pages[choice]])
@@ -55,5 +57,6 @@ def shufflePages():
 	reader = pdfrw.PdfReader('output/novel.pdf')
 	writer = pdfrw.PdfWriter()
 	random.shuffle(reader.pages)
+	writer.addpage('temp.pdf')
 	for page in reader.pages: writer.addpage(page)
 	writer.write('output/novel.pdf')

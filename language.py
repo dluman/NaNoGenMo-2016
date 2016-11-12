@@ -6,7 +6,9 @@ from nltk.corpus import wordnet as wn
 from nltk.corpus import brown
 import math
 import numpy as np
-import sys
+import re, sys
+from textblob import TextBlob
+from textblob_aptagger import PerceptronTagger
 
 # Parameters to the algorithm. Currently set to values that was reported
 # in the paper to produce "best" results.
@@ -239,3 +241,14 @@ def similarity(sentence_1, sentence_2, info_content_norm):
     """
     return DELTA * semantic_similarity(sentence_1, sentence_2, info_content_norm) + \
         (1.0 - DELTA) * word_order_similarity(sentence_1, sentence_2)
+
+######################### PRONOUN SUBSTITUTION ########################
+
+def pronounSub(string):
+	tokens = TextBlob(string,pos_tagger = PerceptronTagger())
+	for word,speech in tokens.tags:
+		sub = ""
+		if speech == "PRP": sub == "I"
+		if speech == "PRP$": sub == "My"
+		string = re.sub(speech,sub,string,re.I)
+	return string
