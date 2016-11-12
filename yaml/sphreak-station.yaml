@@ -1,0 +1,415 @@
+---
+-
+    Switch: HBVLNJ01DS5
+    Name: POINT PLEASANT
+    Street: 411 VAN ZILE RD.
+    City: HERBERTSVILLE, NJ
+    ZIP: 08723
+    Lat: 40.09015
+    Long: -74.13127
+    Tech: DMS100
+-
+    Switch: KYPTNJKYDS5
+    Name: KEYPORT
+    Street: 32 MAPLE PL.
+    City: KEYPORT, NJ
+    ZIP: 07735
+    Lat: 40.43301
+    Long: -74.19939
+    Tech: DMS100
+-
+    Switch: MTCHNJMTDS5
+    Name: METUCHEN
+    Street: 515 MAIN ST.
+    City: METUCHEN, NJ
+    ZIP: 08840
+    Lat: 40.54373
+    Long: -74.36307
+    Tech: 5ESS
+-
+    Switch: RDBKNJRBDS5
+    Name: RED BANK
+    Street: 183 BROAD ST.
+    City: RED BANK, NJ
+    ZIP: 07701
+    Lat: 40.33861
+    Long: -74.0641
+    Tech: DMS100
+-
+    Switch: NBWKNJNBDS6
+    Name: NEW BRUNSWICK
+    Street: 18 PATERSON ST.
+    City: NEW BRUNSWICK, NJ
+    ZIP: 08901
+    Lat: 40.49499
+    Long: -74.44302
+    Tech: DMS100
+-
+    Switch: RHWYNJRADS5
+    Name: RAHWAY
+    Street: 90 W. MILTON AVE.
+    City: RAHWAY, NJ
+    ZIP: 07065
+    Lat: 40.6061
+    Long: -74.27959
+    Tech: DMS100
+-
+    Switch: LGBRNJLBDS5
+    Name: LONG BRANCH
+    Street: 28 THIRD AVE.
+    City: LONG BRANCH, NJ
+    ZIP: 07740
+    Lat: 40.3042
+    Long: -73.98729
+    Tech: DMS100
+-
+    Switch: MNSQNJ01DS5
+    Name: MANASQUAN
+    Street: 1223 CHURCH ST.
+    City: MANASQUAN, NJ
+    ZIP: 07719
+    Lat: 40.12664
+    Long: -74.0654
+    Tech: 5ESS
+-
+    Switch: FRDSNJFRDS5
+    Name: FORDS
+    Street: 490 NEW BRUNSWICK AVE.
+    City: FORDS, NJ
+    ZIP: 08863
+    Lat: 40.5276
+    Long: -74.31129
+    Tech: 5ESS
+-
+    Switch: PSWYNJPIDS5
+    Name: PISCATAWAY
+    Street: 4 SKILES AVE.
+    City: PISCATAWAY, NJ
+    ZIP: 08854
+    Lat: 40.5382
+    Long: -74.47076
+    Tech: DMS100
+-
+    Switch: BYVLNJBVDS5
+    Name: TOMS RIVER
+    Street: 599 HIGHWAY 9
+    City: BAYVILLE, NJ
+    ZIP: 08721
+    Lat: 39.90525
+    Long: -74.15597
+    Tech: 5ESS
+-
+    Switch: SORVNJSRDS5
+    Name: SOUTH RIVER
+    Street: 318 CRANBURY RD.
+    City: SOUTH RIVER, NJ
+    ZIP: 08882
+    Lat: 40.44203
+    Long: -74.39172
+    Tech: DMS100
+-
+    Switch: TMRVNJTRDS5
+    Name: TOMS RIVER 2
+    Street: 119 WASHINGTON ST.
+    City: TOMS RIVER, NJ
+    ZIP: 08753
+    Lat: 39.9519
+    Long: -74.19471
+    Tech: 5ESS
+-
+    Switch: EDSNNJEDDS5
+    Name: EDISON
+    Street: 1883 LINCOLN HWY.
+    City: EDISON, NJ
+    ZIP: 08817
+    Lat: 40.51589
+    Long: -74.40116
+    Tech: 5ESS
+-
+    Switch: SPWDNJSWDS5
+    Name: SOUTH RIVER 2
+    Street: 461 MAIN ST.
+    City: SPOTSWOOD, NJ
+    ZIP: 08884
+    Lat: 40.39377
+    Long: -74.38671
+    Tech: DMS100
+-
+    Switch: WOVLNJWODS1
+    Name: WEST OSBORNVILLE
+    Street: 189 DRUM POINT RD.
+    City: WEST OSBORNVILLE, NJ
+    ZIP: 08723
+    Lat: 40.04432
+    Long: -74.12615
+    Tech: DMS100
+-
+    Switch: FRDLNJ01DS5
+    Name: FARMINGDALE
+    Street: 50 MAIN ST.
+    City: FARMINGDALE-MONMOUT, NJ
+    ZIP: 07727
+    Lat: 40.20375
+    Long: -74.17078
+    Tech: DMS100
+-
+    Switch: EDVRNJ01DS5
+    Name: TOMS RIVER 3
+    Street: FISHER BLVD. 
+    City: EAST DOVER, NJ
+    ZIP: 08753
+    Lat: 39.97267
+    Long: -74.13463
+    Tech: 5ESS
+-
+    Switch: BDBKNJBDDS5
+    Name: BOUND BROOK
+    Street: 210 E. HIGH ST.
+    City: BOUND BROOK, NJ
+    ZIP: 08805
+    Lat: 40.5637
+    Long: -74.53161
+    Tech: 5ESS
+-
+    Switch: MNJTNJ01DS5
+    Name: MONMOUTH JUNCTION
+    Street: CHERYL CT.
+    City: MONMOUTH JUNCTION, NJ
+    ZIP: 08852
+    Lat: 40.38044
+    Long: -74.53466
+    Tech: 5ESS
+-
+    Switch: MDTWNJMDDS5
+    Name: MIDDLETOWN
+    Street: KINGS HWY.
+    City: MIDDLETOWN, NJ
+    ZIP: 07748
+    Lat: 40.3943
+    Long: -74.11592
+    Tech: DMS100
+-
+    Switch: SPLKNJSLDS5
+    Name: SPRING LAKE
+    Street: 216 MORRIS AVE.
+    City: SPRING LAKE, NJ
+    ZIP: 07762
+    Lat: 40.15228
+    Long: -74.02641
+    Tech: 5ESS
+-
+    Switch: WDBRNJWDDS5
+    Name: WOODBRIDGE
+    Street: 138 MAIN ST.
+    City: WOODBRIDGE, NJ
+    ZIP: 07095
+    Lat: 40.55342
+    Long: -74.28375
+    Tech: DMS100
+-
+    Switch: ATHGNJAHDS5
+    Name: ATLANTIC HIGHLANDS
+    Street: 178 FIRST AVE.
+    City: ATLANTIC HIGHLANDS, NJ
+    ZIP: 07716
+    Lat: 40.4089
+    Long: -74.04128
+    Tech: 5ESS
+-
+    Switch: PAMBNJPMDS5
+    Name: PERTH AMBOY
+    Street: 183 JEFFERSON ST.
+    City: PERTH AMBOY, NJ
+    ZIP: 08861
+    Lat: 40.51021
+    Long: -74.2703
+    Tech: EWSD
+-
+    Switch: FRHDNJFHDS5
+    Name: FREEHOLD
+    Street: 56 E. MAIN ST.
+    City: FREEHOLD, NJ
+    ZIP: 07728
+    Lat: 40.26248
+    Long: -74.27028
+    Tech: DMS100
+-
+    Switch: PTPLNJPPDS1
+    Name: POINT PLEASANT 2
+    Street: 1032 OCEAN RD.
+    City: POINT PLEASANT, NJ
+    ZIP: 08723
+    Lat: 40.08476
+    Long: -74.06178
+    Tech: 5ESS
+-
+    Switch: FNPKNJFPDS5
+    Name: FRANKLIN PARK
+    Street: 3090 HIGHWAY 27
+    City: FRANKLIN PARK, NJ
+    ZIP: 08823
+    Lat: 40.43508
+    Long: -74.54102
+    Tech: 5ESS
+-
+    Switch: SYRVNJSADS5
+    Name: SOUTH AMBOY
+    Street: 934 HIGHWAY 9
+    City: SAYREVILLE, NJ
+    ZIP: 08879
+    Lat: 40.46233
+    Long: -74.29662
+    Tech: 5ESS
+-
+    Switch: LKHRNJ01DS5
+    Name: LAKEHURST
+    Street: 2 BROWN AVE.
+    City: LAKEHURST, NJ
+    ZIP: 08733
+    Lat: 40.01212
+    Long: -74.30909
+    Tech: 5ESS
+-
+    Switch: HOLMNJHODS5
+    Name: HOLMDEL
+    Street: 970 HOLMDEL-KEYPORT
+    City: HOLMDEL, NJ
+    ZIP: 07733
+    Lat: 40.34414
+    Long: -74.18807
+    Tech: 5ESS
+-
+    Switch: WHNGNJ01DS5
+    Name: LAKEHURST 2
+    Street: S. LACEY RD.
+    City: WHITING, NJ
+    ZIP: 08759
+    Lat: 39.96014
+    Long: -74.39289
+    Tech: 5ESS
+-
+    Switch: BWTWNJBTDS5
+    Name: BROWNTOWN
+    Street: 10 PHILLIPS DR.
+    City: BROWNTOWN, NJ
+    ZIP: 08857
+    Lat: 40.40628
+    Long: -74.30455
+    Tech: 5ESS
+-
+    Switch: LKWDNJLKDS5
+    Name: LAKEWOOD
+    Street: 216 LEXINGTON AVE.
+    City: LAKEWOOD, NJ
+    ZIP: 08701
+    Lat: 40.09248
+    Long: -74.21212
+    Tech: 5ESS
+-
+    Switch: EATNNJEADS5
+    Name: EATONTOWN
+    Street: 77 THROCKMORTON AVE.
+    City: EATONTOWN, NJ
+    ZIP: 07724
+    Lat: 40.30711
+    Long: -74.05743
+    Tech: 5ESS
+-
+    Switch: DNLNNJDUDS5
+    Name: DUNELLEN
+    Street: MADISON & SOUTH AVES.
+    City: DUNELLEN, NJ
+    ZIP: 08812
+    Lat: 40.59027
+    Long: -74.46348
+    Tech: 5ESS
+-
+    Switch: EGTWNJETDS5
+    Name: ENGLISHTOWN
+    Street: 17 HARRISON ST.
+    City: ENGLISHTOWN, NJ
+    ZIP: 07726
+    Lat: 40.29637
+    Long: -74.35598
+    Tech: DMS100
+-
+    Switch: KNBGNJKEDS5
+    Name: KEANSBURG
+    Street: GRANT PL.
+    City: KEANSBURG, NJ
+    ZIP: 07734
+    Lat: 40.439619
+    Long: -74.11953
+    Tech: DMS100
+-
+    Switch: NPTUNJNTDS5
+    Name: NEPTUNE
+    Street: 789 WAYSIDE RD.
+    City: NEPTUNE, NJ
+    ZIP: 07753
+    Lat: 40.22816
+    Long: -74.06083
+    Tech: 5ESS
+-
+    Switch: ASPKNJAPDS5
+    Name: ASBURY PARK
+    Street: 507 BANGS AVE.
+    City: ASBURY PARK, NJ
+    ZIP: 07712
+    Lat: 40.21682
+    Long: -74.00855
+    Tech: 5ESS
+-
+    Switch: JMBGNJJADS5
+    Name: JAMESBURG
+    Street: 222 FORSGATE DR.
+    City: JAMESBURG, NJ
+    ZIP: 08831
+    Lat: 40.34677
+    Long: -74.43731
+    Tech: 5ESS
+-
+    Switch: RBVLNJRBDS5
+    Name: ENGLISHTOWN 2
+    Street: TENNENT & CHURCH RD.
+    City: ROBERTSVILLE, NJ
+    ZIP: 07726
+    Lat: 40.28421
+    Long: -74.32702
+    Tech: DMS100
+-
+    Switch: CARTNJCADS5
+    Name: CARTERET
+    Street: 100 LOWELL ST.
+    City: CARTERET, NJ
+    ZIP: 07088
+    Lat: 40.579
+    Long: -74.2239
+    Tech: DMS100
+-
+    Switch: LNDNNJ01DS5
+    Name: LINDEN
+    Street: 245 S. WOOD AVE.
+    City: LINDEN, NJ
+    ZIP: 07036
+    Lat: 40.62852
+    Long: -74.24865
+    Tech: DMS100
+-
+    Switch: LVLTNJSPDS5
+    Name: SEASIDE PARK
+    Street: 1407 GRAND CENTRAL AVE.
+    City: LAVALLETTE, NJ
+    ZIP: 08752
+    Lat: 39.97002
+    Long: -74.07004
+    Tech: DMS100
+-
+    Switch: VNHSNJVHDS5
+    Name: LAKEWOOD 2
+    Street: VAN HISEVILLE RD.
+    City: VAN HISEVILLE, NJ
+    ZIP: 08527
+    Lat: 40.11423
+    Long: -74.35423
+    Tech: DMS100
