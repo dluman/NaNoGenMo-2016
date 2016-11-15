@@ -42,30 +42,48 @@ def takeTrip(start_point,end_point,fuel,mpg,trip,speed,time):
 	if fuel < 0:
 		reason = "fuel"
 		return (fuel + (float(mileage)/mpg) + (float(fromhome)/mpg),0,time + (float(mileage)/speed) + (float(fromhome)/speed),reason)
-	elif time <0:
+	elif time < 0:
 		reason = "time"
 		return (fuel + (float(mileage)/mpg) + (float(fromhome)/mpg),0,time + (float(mileage)/speed) + (float(fromhome)/speed),reason)
 	trip += 1
 	return fuel, trip, time, "none"
 
 if __name__ == "__main__":
+	
+	#Reset character to default
+	character.restore()
+	
 	#Initialize character
 	novel_narr = Character()
 	fuel = novel_narr.carfuel
 	money = novel_narr.money
 	speed = 42.50
 	trip = 1
+	paydays = [15,29]
+	
 	#Start nightly trip
 	visits = []
 	tech = []
 	home = novel_narr.home
 	start_station = Station()
-	#Go on trip
+	
+	#Set up the day
 	weather = weather.getForecast(novel_narr.lasttrip)
 	day = weather.date.split("-")[2]
 	if len(day) < 2:
 		day = "0"+day
+
+	#Events based on the day
+	if int(day) in paydays: money = novel_char.money + wage
+	if int(day) == 1: money = character.useSupplies(money)
+
+	#Checking supplies
+	if fuel <= 1: money, fuel_needed, fuel = character.fillUp(money,fuel)
+	
+	#Set the amount of time for the trip
 	duration = time = random.randint(2,6)
+
+	#Loop while resources (time, fuel) are still available
 	while trip != 0:
 		if trip == 1:
 			fuel, trip, time, reason = takeTrip(home,start_station,fuel,novel_narr.carmpg,trip,speed,time)
@@ -89,11 +107,14 @@ if __name__ == "__main__":
 		prev_station = start_station
 	novel_narr.carfuel = fuel
 	novel_narr.money = money
+	
 	#Save character status
 	character.writeStatus(novel_narr)
-	#Character development monologue
+	
+	#Generate character development monologue
 	monologue = random.randrange(12)
-	text = workplace.getWorkGripe(monologue)
+	text = workplace.getWorkGripe(monologue) + "\\"
+	
 	#Report trip status
 	text = text + " Tonight, I went out for %s hours." % (str(int(time)))
 	text = text + " It was %s degrees, was rained %s inches." % (weather.low,weather.precipitation)
@@ -102,7 +123,11 @@ if __name__ == "__main__":
 	text = text + " But, I had to stop because I was out of %s." % (reason)
 	try: write.createEntry(str(weather.date),text)
 	except: pass
-	#Collect documents
+	
+	#Write daily entry
+	documents.entryPage()
+	
+	#Collect documents written & found
 	for station in visits:
 		found_files = []
 		found_pages = []
@@ -126,4 +151,6 @@ if __name__ == "__main__":
 				found_pages.append(page)
 		documents.mergePages(found_files,found_pages)
 		#documents.shufflePages()
+	
+	#Clean up temporary files
 	os.remove('temp.pdf')
