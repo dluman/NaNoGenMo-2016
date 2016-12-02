@@ -4,3 +4,7 @@
 # End-of-month Update
 
 Well, I'm a day (or so) late, but wanted to update the repo with what I'm considering a first draft. This project still has a lot of interesting avenues to pursue, but I'm one computed novel down with (hopefully) many more to go.
+
+The file is HUGE, so GitHub has some trouble with it. No matter! Here's a link: https://drive.google.com/open?id=0B4cYh0dWc005aHVXNDc0SGQxZk0
+
+Who knows if it's any good? All I can say for certain is that this iteration is done.
