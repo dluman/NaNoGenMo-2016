@@ -51,7 +51,7 @@ def takeTrip(start_point,end_point,fuel,mpg,trip,speed,time):
 if __name__ == "__main__":
 	
 	#Reset character to default
-	character.restore()
+	#character.restore()
 	
 	#Initialize character
 	novel_narr = Character()
@@ -60,6 +60,7 @@ if __name__ == "__main__":
 	speed = 42.50
 	trip = 1
 	paydays = [15,29]
+	wage = 710.82
 	
 	#Start nightly trip
 	visits = []
@@ -68,13 +69,13 @@ if __name__ == "__main__":
 	start_station = Station()
 	
 	#Set up the day
-	weather = weather.getForecast(novel_narr.lasttrip)
-	day = weather.date.split("-")[2]
+	report = weather.getForecast(novel_narr.lasttrip)
+	day = str(report.date).split("-")[2]
 	if len(day) < 2:
 		day = "0"+day
 
 	#Events based on the day
-	if int(day) in paydays: money = novel_char.money + wage
+	if int(day) in paydays: money = novel_narr.money + wage
 	if int(day) == 1: money = character.useSupplies(money)
 
 	#Checking supplies
@@ -84,7 +85,7 @@ if __name__ == "__main__":
 	duration = time = random.randint(2,6)
 
 	#Loop while resources (time, fuel) are still available
-	while trip != 0:
+	while trip != 0 and fuel > 1:
 		if trip == 1:
 			fuel, trip, time, reason = takeTrip(home,start_station,fuel,novel_narr.carmpg,trip,speed,time)
 			visits.append(start_station)
@@ -112,16 +113,39 @@ if __name__ == "__main__":
 	character.writeStatus(novel_narr)
 	
 	#Generate character development monologue
-	monologue = random.randrange(12)
-	text = workplace.getWorkGripe(monologue) + "\\"
+	monologue = random.randrange(3,10)
+	text = workplace.getWorkGripe(monologue) + " "
 	
 	#Report trip status
-	text = text + " Tonight, I went out for %s hours." % (str(int(time)))
-	text = text + " It was %s degrees, was rained %s inches." % (weather.low,weather.precipitation)
-	for station in visits:
-		text = text + " At %s I found %s manuals." % (station.name,station.tech)
-	text = text + " But, I had to stop because I was out of %s." % (reason)
-	try: write.createEntry(str(weather.date),text)
+	#text = text + " Tonight, I went out for %s hours." % (str(int(time)))
+	#text = text + " It was %s degrees, was rained %s inches." % (weather.low,weather.precipitation)
+	#for station in visits:
+	#	text = text + " At %s I found %s manuals." % (station.name,station.tech)
+	#text = text + " But, I had to stop because I was out of %s." % (reason)
+	if report.low < 32: 
+		text = text + " Tonight was freezing; %s is cold! It was supposed to be %s today!" % (report.low,report.high)
+	elif report.low > 32 and report.low < 50:
+		text = text + " Nice November night. %s seems about right for this time of year." % (report.low)
+	else:
+		text = text + " %s is too warm for November." % (report.low)
+	if fuel < 1:
+		days = 0
+		if int(day) < 15:
+			days = 15 - int(day)
+		elif int(day) > 15:
+			days = 29 - int(day)
+		if days == 1:
+			plural = ""
+		else:
+			plural = "s"
+		text = text + " But, not having money for gas to go anywhere sucks. %s day%s until pay day is too many days." % (str(days),plural)
+	if float(report.precipitation) > 0:
+		text = text + " Too bad it's raining outside. Seems to have rained %s inches." % (str(report.precipitation))
+		if fuel > 1:
+			text = text + " Got some documents though they may be a little wet."
+	else:
+		text = text + " At least it didn't rain."	
+	try: write.createEntry(str(report.date),text)
 	except: pass
 	
 	#Write daily entry
@@ -152,5 +176,4 @@ if __name__ == "__main__":
 		documents.mergePages(found_files,found_pages)
 		#documents.shufflePages()
 	
-	#Clean up temporary files
-	os.remove('temp.pdf')
+	os.rename('output/novel.pdf','output/novel-'+day+'.pdf')

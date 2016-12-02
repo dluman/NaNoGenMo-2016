@@ -1,0 +1,3 @@
+import character
+
+character.restore()

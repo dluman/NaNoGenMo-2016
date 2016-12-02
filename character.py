@@ -46,6 +46,7 @@ def fillUp(money,fuel):
 	afford = money/cost
 	if afford >= 11: fuel_needed = 11 - fuel
 	if afford < 11: fuel_needed = money/cost
+	fuel = fuel_needed
 	money = money - (fuel_needed*cost)
 	return money, fuel_needed, fuel
 

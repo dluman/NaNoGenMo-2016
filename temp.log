@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.11.11)  14 NOV 2016 20:57
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.11.11)  2 DEC 2016 01:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -314,22 +314,22 @@ LaTeX Font Info:    Try loading font information for T1+lmr on input line 7.
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] (./temp.aux) ) 
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./temp.aux) ) 
 Here is how much of TeX's memory you used:
  675 strings out of 495028
  6727 string characters out of 6181496
- 65801 words of memory out of 5000000
+ 50801 words of memory out of 5000000
  3939 multiletter control sequences out of 15000+600000
  12627 words of font info for 17 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 23i,4n,22p,7955b,115s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/sh
-are/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/public/lm/
-lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb>
-Output written on temp.pdf (2 pages, 61247 bytes).
+ 23i,4n,22p,605b,115s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/
+texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx
+12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb>
+Output written on temp.pdf (1 page, 50851 bytes).
 PDF statistics:
- 20 PDF objects out of 1000 (max. 8388607)
- 13 compressed objects within 1 object stream
+ 17 PDF objects out of 1000 (max. 8388607)
+ 11 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

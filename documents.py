@@ -19,12 +19,13 @@ def getPage(file):
  	used = checkUse(filename,randomPage)
 	if not used:
 		with open('texts/use.log','aw') as f:
-			f.write(filename+str(randomPage))
+			f.write(filename+str(randomPage)+'\n')
 		return filename, randomPage
 	else:
 		getPage(file)
 
 def mergePages(files,pages):
+	print files,pages
 	writer = pdfrw.PdfWriter()
 	#text_reader = pdfrw.PdfReader('temp.pdf')
 	#writer.addpages(text_reader.pages)
