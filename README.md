@@ -8,3 +8,5 @@ Well, I'm a day (or so) late, but wanted to update the repo with what I'm consid
 The file is HUGE, so GitHub has some trouble with it. No matter! Here's a link: https://drive.google.com/open?id=0B4cYh0dWc005aHVXNDc0SGQxZk0
 
 Who knows if it's any good? All I can say for certain is that this iteration is done.
+
+FINAL WORD COUNT: 284,840
